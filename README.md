@@ -1,2 +1,5 @@
-# TCC-Projeto-final
-Projeto final de desenvolvimento de sistemas 2021
+# Projeto final
+
+*Site de venda de arte* 
+
+_Feito por Eduardo Fonseca e Gabriel Borges_
