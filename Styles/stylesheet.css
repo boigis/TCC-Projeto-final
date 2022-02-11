@@ -1,0 +1,43 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	background-color: darkred;
+}
+
+body{
+	background-color: darkred;
+}
+
+header{
+	padding: 35px;
+	color: white;
+	font-weight: bold;
+}
+
+ul{
+	list-style-type: none;
+}
+
+li{
+	display: inline-block;
+	margin-right: 40px;
+}
+
+nav{
+	top: -10px;
+	margin-left: 1080px;
+}
+
+.logo{
+	color: white;
+	margin-left: 70px;
+	margin-top: 35px;
+	position: absolute;
+}
+
+.maintitle{
+	color: whitesmoke;
+	font-weight: bolder;
+	margin-left: 200px;
+	margin-top: 150px;
+}
