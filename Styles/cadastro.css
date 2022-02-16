@@ -1,0 +1,27 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	background-color: #5f010a;
+	background-image: url(../Assets/noise.png);
+}
+
+.main{
+	width: 1100px;
+	height: 650px;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+	background-color: #380006;
+	background-image: url(../Assets/noise.png);
+	border: 1px solid #260004;
+}
+
+.vertical{
+    border-left: 2px solid #260004;
+    height: 650px;
+    position:absolute;
+    left: 45%;
+}
