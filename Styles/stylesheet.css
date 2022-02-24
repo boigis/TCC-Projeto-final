@@ -1,7 +1,10 @@
 *{
 	margin: 0px;
 	padding: 0px;
-	background-color:  #5f010a;
+}
+
+body{
+	background-color: #5f010a;
 	background-image: url(../Assets/noise.png);
 }
 
@@ -58,7 +61,7 @@ nav{
     font-family: 'Roboto Slab', serif;
 }
 
-.login{
+.login a{
 	color: white;
 }
 
@@ -77,4 +80,37 @@ nav{
 .login{
 	text-decoration: none;
 	color: whitesmoke;
+}
+
+
+.gallery h3{
+	margin-left: 290px;	
+	margin-top: 450px;
+	font-family: 'Lato', sans-serif;
+    font-family: 'PT Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
+    color: whitesmoke;
+    letter-spacing: 1.5px;
+    font-size: 35px;
+}
+
+.Arts img{
+	height: 260px;
+	width: 200px;
+	margin-left: 290px;	
+	margin-top: 70px;
+	position: relative;
+}
+
+.TravellerElf p{
+	margin-left: 290px;
+	margin-top: 10px;
+	color: white;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+img:hover{
+	background: rgba(76, 175, 80, 0.3);
 }
