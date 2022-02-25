@@ -96,6 +96,10 @@ nav{
 }
 
 .Arts img{
+	box-shadow: -9px 9px 15px black;
+}
+
+.Arts .TravellerElf img{
 	height: 260px;
 	width: 200px;
 	margin-left: 290px;	
@@ -103,14 +107,43 @@ nav{
 	position: relative;
 }
 
-.TravellerElf p{
-	margin-left: 290px;
-	margin-top: 10px;
+.TravellerElf .description{
+	background-color: #3E0107;
+	position: relative;
+	top: -150px;
+	left: 390px;
+	width: 200px;
+	box-shadow: -9px 9px 15px black;
+}
+
+.TravellerElf .description p, .ElfFightingStance .description p{
 	color: white;
-	font-size: 20px;
+	font-size: 15px;
 	letter-spacing: 1px;
 }
 
-img:hover{
-	background: rgba(76, 175, 80, 0.3);
+.TravellerElf .description button, .ElfFightingStance .description button{
+	color: black;
+	font-size: 20px;
+	font-weight: lighter;
+	margin-left: 70px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.Arts .ElfFightingStance img{
+	height: 260px;
+	width: 290px;
+	margin-left: 650px;
+	margin-top: -345px;	
+ 	position: absolute;
+}
+
+.ElfFightingStance .description{
+	background-color: #3E0107;
+	position: relative;
+	top: -235px;
+	left: 840px;
+	width: 200px;
+	box-shadow: -9px 9px 15px black;
 }
