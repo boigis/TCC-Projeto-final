@@ -83,7 +83,7 @@ nav{
 }
 
 
-.gallery h3{
+.gallery h2{
 	margin-left: 250px;	
 	margin-top: 450px;
 	font-family: 'Lato', sans-serif;
@@ -93,6 +93,19 @@ nav{
     color: whitesmoke;
     letter-spacing: 1.5px;
     font-size: 35px;
+}
+
+.gallery h4{
+	margin-top: 30px;
+	margin-left: 250px;
+	margin-bottom: -30px;
+	font-family: 'Lato', sans-serif;
+    font-family: 'PT Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
+    color: #949b9e;
+    letter-spacing: 1.5px;
+    font-size: 20px;
 }
 
 .Arts img{
@@ -117,14 +130,14 @@ nav{
 	box-shadow: -9px 9px 15px black;
 }
 
-.TravellerElf .description p, .ElfFightingStance .description p, .SasukeDrawing .description p, .HollowKnight .description p, .FlowerDressInked .description p{
+.TravellerElf .description p, .ElfFightingStance .description p, .SasukeDrawing .description p, .HollowKnight .description p, .FlowerDressInked .description p, .VoidGivenForm .description p{
 	color: white;
 	font-size: 15px;
 	letter-spacing: 1px;
 	text-align: center;
 }
 
-.TravellerElf .description button, .ElfFightingStance .description button, .SasukeDrawing .description button, .HollowKnight .description button, .FlowerDressInked .description button{
+.TravellerElf .description button, .ElfFightingStance .description button, .SasukeDrawing .description button, .HollowKnight .description button, .FlowerDressInked .description button, .VoidGivenForm .description button{
 	width: 100%;
 	height: 50%;
   	border: none;
@@ -208,5 +221,22 @@ nav{
 	background-color: #3E0107;
 	left: 840px;
 	top: -940px;
-	width: 230px;
+	width: 200px;
+}
+
+.Arts .VoidGivenForm img{
+	position: relative;
+	background-color: #3E0107;
+	height: 245px;
+	width: 300px;
+	left: 1100px;
+	top: -1120px;
+}
+
+.VoidGivenForm .description{
+	position: relative;
+	background-color: #3E0107;
+	width: 200px;
+	top: -1270px;
+	left: 1300px;
 }
