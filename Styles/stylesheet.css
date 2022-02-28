@@ -83,7 +83,7 @@ nav{
 }
 
 
-.gallery h2{
+.gallery h2, .RequestSection h2{
 	margin-left: 250px;	
 	margin-top: 450px;
 	font-family: 'Lato', sans-serif;
@@ -239,4 +239,9 @@ nav{
 	width: 200px;
 	top: -1270px;
 	left: 1300px;
+}
+
+.RequestSection{
+	position: relative;
+	bottom: 1450px;
 }
