@@ -297,5 +297,20 @@ nav{
 }
 
 .NFT button{
-	margin-left: 150px;
+	margin-left: 70px;
+	height: 50%;
+	width: 200px;
+  	border: none;
+  	padding: 18px;
+  	font-family: 'Rubik', sans-serif;
+  	cursor: pointer;
+  	text-transform: uppercase;
+  	background: #e8e9ec;
+  	color: black;
+  	border-bottom-left-radius: 4px;
+  	border-bottom-right-radius: 0;
+  	letter-spacing: 0.5px;
+  	outline: 0;
+  	-webkit-transition: all .3s;
+  	transition: all .3s;	font-weight: bolder;
 }
