@@ -276,9 +276,11 @@ nav{
 }
 
 .NFT .description p{
-	color: white;
+	color: ghostwhite;
 	font-family: 'Roboto Mono', monospace;
     font-family: 'Roboto Slab', serif;
     margin-left: 750px;
     margin-top: -360px;
+    margin-right: 140px;
+    font-size: 20px;
 }
