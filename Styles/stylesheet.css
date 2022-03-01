@@ -83,7 +83,7 @@ nav{
 }
 
 
-.gallery h2, .RequestSection h2{
+.gallery h2, .NFT h2{
 	margin-left: 250px;	
 	margin-top: 450px;
 	font-family: 'Lato', sans-serif;
@@ -241,7 +241,44 @@ nav{
 	left: 1300px;
 }
 
-.RequestSection{
+.NFT{
 	position: relative;
-	bottom: 1560px;
+	bottom: 1440px;
+}
+
+.NFT .subtitle{
+	margin-top: 30px;
+	margin-left: 250px;
+	font-family: 'Lato', sans-serif;
+    font-family: 'PT Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
+    color: #949b9e;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+
+.NFT .NFTimage{
+	border: medium dashed white;
+	position: relative;
+	height: 400px;
+	width: 400px;
+	left: 300px;
+	top: 50px;
+}
+
+.NFT .NFTimage img{
+	height: 300px;
+	width: 300px;
+	position: relative;
+	top: 50px;
+	left: 40px;
+}
+
+.NFT .description p{
+	color: white;
+	font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
+    margin-left: 750px;
+    margin-top: -360px;
 }
