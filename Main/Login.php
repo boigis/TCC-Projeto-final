@@ -1,3 +1,6 @@
+<?php session_start();
+include("conexao.php");
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -18,14 +21,24 @@
 	<body>
 		<div class="main">
 			<div class="login-form">
-  				<form>
+  				<form method="POST" action="verifica.php">
     			<h1>Login</h1>
+				<?php
+				if(isset($_SESSION['invalido']))
+				{
+				?>
+				<div class="notification">
+					<p>Email ou senha errados. Tente novamente</p>
+				</div>
+				<?php 
+				} 
+				unset($_SESSION['invalido']); ?>
     				<div class="content">
       					<div class="input-field">
-        					<input type="email" placeholder="Email" autocomplete="nope">
+        					<input type="email" placeholder="Email" name ="email" autocomplete="nope">
       					</div>
       					<div class="input-field">
-        					<input type="password" placeholder="Password" autocomplete="new-password">
+        					<input type="password" placeholder="Password" name="password" autocomplete="new-password">
         				</div>
       				</div>
       				<div class="action">
