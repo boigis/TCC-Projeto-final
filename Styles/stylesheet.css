@@ -268,19 +268,34 @@ nav{
 }
 
 .NFT .NFTimage img{
-	height: 300px;
-	width: 300px;
+	height: 350px;
+	width: 350px;
 	position: relative;
-	top: 50px;
-	left: 40px;
+	top: 25px;
+	left: 30px;
 }
 
 .NFT .description p{
-	color: ghostwhite;
+	color: #949b9e;
 	font-family: 'Roboto Mono', monospace;
     font-family: 'Roboto Slab', serif;
     margin-left: 750px;
     margin-top: -360px;
     margin-right: 140px;
     font-size: 20px;
+}
+
+.BriefTitle{
+	margin-left: 500px;
+	margin-top: -400px;
+	font-size: 10px;
+}
+
+.NFT .buttons{
+	margin-left: 800px;
+	margin-top: 90px;
+}
+
+.NFT button{
+	margin-left: 150px;
 }
