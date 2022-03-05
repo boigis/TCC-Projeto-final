@@ -1,5 +1,4 @@
 <?php session_start();
-include("conexao.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -44,6 +43,6 @@ include("conexao.php");
       				<div class="action">
       					<button>Go</button>
       				</div>
-      			<a href="#" class="link">Forgot Your Password?</a>
+					  <a href="recoverpword.php" class="link">Forgot Your Password?</a>
 	</body>
 </html>

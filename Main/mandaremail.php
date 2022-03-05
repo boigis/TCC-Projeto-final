@@ -32,13 +32,13 @@ if ($row != 0){
     $query = "INSERT INTO codigos SET codigo = '{$codigo}', data = '$data_expirar'";
     $insert = mysqli_query($conn, $query);
     if($insert){
-    if(mail($destinatario, $assunto, $corpo, $headers))
-    {
-        $_SESSION['success'] = true;
-        header('Location: recoverpword.php');
-        exit;
+        if(mail($destinatario, $assunto, $corpo, $headers))
+        {
+            $_SESSION['success'] = true;
+            header('Location: recoverpword.php');
+            exit;
+        }
     }
-}
 }
 ?>
 </html>

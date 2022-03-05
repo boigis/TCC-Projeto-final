@@ -43,6 +43,14 @@ include("conexao.php");
 				<?php 
 				} 
 				unset($_SESSION['invalido']); ?>
+				<?php
+				if(isset($_SESSION['error']))
+				{ 
+				?>
+					 <div class = "notification">
+						<p>Senhas não coincidem. Tente novamente.</p>
+					</div>
+				<?php } unset($_SESSION['error']);?>
     				<div class="content">
     					<div class="input-field">
         					<input type="text" placeholder="Name" name = "user" autocomplete="nope" required>
@@ -52,6 +60,9 @@ include("conexao.php");
       					</div>
       					<div class="input-field">
         					<input type="password" placeholder="Password" name ="password" autocomplete="new-password" required>
+						</div>
+						<div class="input-field">
+        					<input type="password" placeholder="Confirm Password" name ="confirm_password" autocomplete="new-password" required>
         				</div>
 					  </div>
       				<div class="action">

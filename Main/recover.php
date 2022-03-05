@@ -1,5 +1,9 @@
 <?php 
 include("conexao.php");
+ini_set("SMTP","smtp.gmail.com" );
+ini_set("smtp_port","465");
+ini_set('sendmail_from', 'sendmailbot123321@gmail.com');
+session_start();
 if(isset($_GET['codigo']))
 {
     $codigo = $_GET['codigo'];
@@ -8,19 +12,30 @@ if(isset($_GET['codigo']))
     $queryexec = mysqli_query($conn, $queryselec);
     if(mysqli_num_rows($queryexec) >= 1)
     {
-        if(isset($_POST['password']))
+        if(isset($_POST['password']) and isset($_POST['confirm_password']))
         {
-            $nova_senha = $_POST['password'];
-            $query = "UPDATE usuarioacesso SET password = '$nova_senha' WHERE email = '$email_codigo'";
-            $query2 = "UPDATE usuariocad SET password = '$nova_senha' WHERE email = '$email_codigo'";
-            $atualizar = mysqli_query($conn, $query);
-            $atualizar2 = mysqli_query($conn, $query2);
-            if($atualizar and $atualizar2){
-                $delete = "DELETE FROM codigos WHERE codigo = '$codigo'";
-                $mudar = mysqli_query($conn, $delete);
-                $_SESSION['success'] = true;
+            $password = $_POST['password'];
+            $confirm_password = $_POST['confirm_password'];
+            if($password == $confirm_password)
+            {
+                $nova_senha = $_POST['password'];
+                $query = "UPDATE usuarioacesso SET password = '$nova_senha' WHERE email = '$email_codigo'";
+                $query2 = "UPDATE usuariocad SET password = '$nova_senha' WHERE email = '$email_codigo'";
+                $atualizar = mysqli_query($conn, $query);
+                $atualizar2 = mysqli_query($conn, $query2);
+                if($atualizar and $atualizar2){
+                    $delete = "DELETE FROM codigos WHERE codigo = '$codigo'";
+                    $mudar = mysqli_query($conn, $delete);
+                    $_SESSION['success'] = true;
+                }
+            }
+            else
+            {
+                $_SESSION['error'] = true;
             }
         }
+        
+    
 ?>
 
 <!DOCTYPE html>
@@ -51,13 +66,23 @@ if(isset($_GET['codigo']))
                     <div class = "notification">
                     <p>Senha modificada</p>
                     <p>Faça login clicando <a href="Login.php" type="blank">aqui</a></p>
-                </div>
+                    </div>
                   <?php } unset($_SESSION['success']);
+                  ?>
+                  <?php if(isset($_SESSION['error']))
+                        {
+                      ?>
+                    <div class = "notification">
+                    <p>Senhas não coincidem. Tente novamente.</p>
+                    </div>
+                  <?php } unset($_SESSION['error']);
                   ?>
       					<div class="input-field">
         					<input type="password" placeholder="Password" name ="password" autocomplete="new-password" required>
         				</div>
-					  </div>
+      					<div class="input-field">
+        					<input type="password" placeholder="Confirm Password" name ="confirm_password" autocomplete="new-password" required>
+        				</div>
       				<div class="action">
 					  <button type="submit">Recover</button>
       				</div>
@@ -67,7 +92,8 @@ if(isset($_GET['codigo']))
 </html>
 
 <?php 
-}
+    }
+     
 else{
     ?>
     <!DOCTYPE html>
@@ -95,4 +121,6 @@ else{
 }
 
 }
+
+
 ?>

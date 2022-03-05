@@ -14,8 +14,8 @@
 
     if($row != 0)
     {
-        $_SESSION['email'] = base64_encode($email);
-        header('Location: index.php?email=' . $_SESSION['email'] . '');
+        $_SESSION['usuario_inserido'] = base64_encode($email);
+        header('Location: index.php?user=' . $_SESSION['usuario_inserido'] . '');
         exit;
     }
     if ($row == 0) {
