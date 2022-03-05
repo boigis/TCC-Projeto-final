@@ -1,6 +1,9 @@
 <?php
-include("conexao.php");
 session_start();
+include("conexao.php");
+ini_set("SMTP","smtp.gmail.com" );
+ini_set("smtp_port","587");
+ini_set('sendmail_from', 'sendmailbot123321@gmail.com');    
 
 if(isset($_POST['emailrecover'])){
     $email = mysqli_real_escape_string($conn, $_POST['emailrecover']);}
